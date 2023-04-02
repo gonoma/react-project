@@ -1,5 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
-
+import NewExpense from "./components/NewExpense/NewExpense";
 import MapView from "./components/Maps/Map";
 
 const App = () => {
@@ -25,6 +25,10 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {};
+
+  //OLD REACT, WE STILL USE THIS FUNCTION IN THE RETURN,
+  //WHICH IS WHY YOU CAN ONLY PASS ONE DIV AT A TIME.
   // return React.createElement(
   //   'div',
   //   {},
@@ -34,7 +38,8 @@ const App = () => {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      //LIFTING STATE UP WITH NewExpense COMPONENT
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       {/* <MapView></MapView> */}
     </div>
