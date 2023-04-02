@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div>
-      //LIFTING STATE UP WITH NewExpense COMPONENT
+      {/* LIFTING STATE UP WITH NewExpense COMPONENT */}
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       {/* <MapView></MapView> */}
