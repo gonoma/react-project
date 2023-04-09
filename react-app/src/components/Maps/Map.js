@@ -51,7 +51,14 @@ const MapView = () => {
     });
   }, []);
 
-  return <div id="viewDiv" style={{ height: "100vh", width: "100vw" }}></div>;
+  return (
+    <div
+      id="viewDiv"
+      style={{
+        height: "100vh",
+      }}
+    ></div>
+  );
 };
 
 export default MapView;

@@ -49,7 +49,18 @@ const App = () => {
       {/* LIFTING STATE UP WITH NewExpense COMPONENT */}
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      {/* <MapView></MapView> */}
+      <div
+        style={{
+          borderRadius: 12,
+          border: "10px solid purple",
+          width: "75%",
+          height: "75%",
+          textAlign: "center",
+          margin: "6rem auto",
+        }}
+      >
+        <MapView />
+      </div>
     </div>
   );
 };
